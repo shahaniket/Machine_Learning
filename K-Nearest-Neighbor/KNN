@@ -1,0 +1,3 @@
+KNN is the simple classification algorithm with considers all the dataset points to classify them.
+It considers k nearest points from the selected data point and ranks them ascendingly.
+And classifies point to the group which has more count in the list.
