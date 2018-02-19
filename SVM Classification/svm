@@ -1,0 +1,3 @@
+SVM is a classification in whcih we have multiple kernels option depending on the fashion of the distribution of data.
+We can classify data in multiple linear ways but SVM gives us the optimal among all the possible option.
+Types of kernel: linear, rbf, poly, sigmoid, etc
