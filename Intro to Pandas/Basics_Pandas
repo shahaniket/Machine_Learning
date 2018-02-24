@@ -1,0 +1,72 @@
+Data strutures in Pandas:
+1) Series:  s = pd.Series(data, index=index, name=name)
+          Series is a basic single dimensional array type any data holding. It can hold integers, strings, floating numbers, dict, ndarray           along with custom index given by user.
+          Index is optional parameter which needs to be unique.So, basically Series is like dict where indexes are keys and data is                 values.If repeated index is given it will raise an Exception.
+          Name is optional attribute and is used to give name to the Series. By using s.name we can check the name of Series. We can also           rename it by using s.rename('other name').
+          Example:
+          In [3]: s = pd.Series(np.random.randn(5), index=['a', 'b', 'c', 'd', 'e'])
+
+          In [4]: s
+          Out[4]: 
+          a    0.4691
+          b   -0.2829
+          c   -1.5091
+          d   -1.1356
+          e    1.2121
+          dtype: float64
+
+          In [5]: s.index
+          Out[5]: Index(['a', 'b', 'c', 'd', 'e'], dtype='object')
+
+          In [6]: pd.Series(np.random.randn(5))
+          Out[6]: 
+          0   -0.1732
+          1    0.1192
+          2   -1.0442
+          3   -0.8618
+          4   -2.1046
+          dtype: float64
+          
+ 2) DataFrame:
+          DataFrame is a 2-dimensional labeled data structure with columns of potentially different types.It is like Series along with             columns which we can give additionally. We can imagine it as SQL table with column names and indexes. We can access the DF               using any of index or column name or using both.
+          Example:
+          In [32]: d = {'one' : pd.Series([1., 2., 3.], index=['a', 'b', 'c']),
+                  'two' : pd.Series([1., 2., 3., 4.], index=['a', 'b', 'c', 'd'])}
+
+          In [33]: df = pd.DataFrame(d)
+
+          In [34]: df
+          Out[34]: 
+             one  two
+          a  1.0  1.0
+          b  2.0  2.0
+          c  3.0  3.0
+          d  NaN  4.0
+
+          In [35]: pd.DataFrame(d, index=['d', 'b', 'a'])
+          Out[35]: 
+             one  two
+          d  NaN  4.0
+          b  2.0  2.0
+          a  1.0  1.0
+
+          In [36]: pd.DataFrame(d, index=['d', 'b', 'a'], columns=['two', 'three'])
+          Out[36]: 
+             two three
+          d  4.0   NaN
+          b  2.0   NaN
+          a  1.0   NaN
+          
+          Data Selection: df['one']
+          Data Addition:  df['three'] = df['one'] * df['two'] (Added at the end)
+          Data Deletion:  del df['two']
+          Data insertion: df.insert(1, 'bar', df['one'])
+          
+          Operation	                      Syntax	          Result
+          Select column	                  df[col]	          Series
+          Select row by label	            df.loc[label]	    Series
+          Select row by integer location	df.iloc[loc]	    Series
+          Slice rows	                    df[5:10]	        DataFrame
+          Select rows by boolean vector	  df[bool_vec]	    DataFrame
+          
+
