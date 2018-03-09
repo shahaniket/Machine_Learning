@@ -1,0 +1,2 @@
+Random forest classification is a part of ensemble learning. Ensemble learning is when we combine same or different algorithm multiple times to get the optimized output.
+In RFC we combine decision tree classification algo multiple times.
