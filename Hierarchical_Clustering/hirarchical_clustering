@@ -1,0 +1,2 @@
+HC is a type of clustering which contains 2 approach to divide the data. Agglomerative is bottom to upside approach while divisive is opposite of it.
+Unlike K means clustering we dont use elbow method to get the optimal number of cluster.We use dendrograms to find out the number of cluster.
