@@ -1,0 +1,3 @@
+K Means Clustering is used to find out the clusters or sections of our dataset which we cant think of. It can find out clusters on multiple independent variable.
+The main point is to find out the number of centroids point or the number of cluster. It can be deduced using Elbow method where we plot the graph for WCSS and number of cluster.
+The plotted graph is decreased exponentially as we increase the number of cluster. We have to find out the elbow point after which the decrease is not that considerable or is gradual.
