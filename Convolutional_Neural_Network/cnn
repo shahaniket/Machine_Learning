@@ -1,0 +1,6 @@
+Convolutional Neural Network is mainly used for image processing. CNN libraries are used to break down the image in the form of matrices of pixels of the image we are processing.
+There are four main steps involved in the Convolutional Neural Network:
+1) Convolutional processing- In this step multiple feature detectors are considered to generate same number of feature detector.
+2) Pooling - In this used to compress the image and consider only the important features of the image in compact format.
+3) Flattenind - In this process pooled image is converted into the single dimensional vector whcih is in the same format as that of the input layer of Artificial Neural Network.
+4) Full connection - In this the generated flattened vector is given input to the artificial neural network and further execution of is taken place same as that of ANN.
