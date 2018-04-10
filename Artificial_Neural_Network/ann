@@ -1,0 +1,10 @@
+Artificial neuron network works on the principle of neuron as it works in our brain.
+There is a input layer which leads to hidden or neuron layer (multiple layers) and which ends with output layer.
+Each input parameter is associated with the weights depending on its contribution on the output. ANN genrates this weight in two forms:
+1) After every batch processing of records it generates the error factor and adjusts the weights of input params for the next batch this approach is known as Gradient Descent method.
+2) Unlike Gradient Descent in this approach after every record processing the error factor is calculated and the weights are adjusted. This approach is called as Stochastic Gradient Descent approach.
+
+The hidden layer contains the activation function which is applied on the input parameters. There are various activation function which can be selected on the basis of the output values pattern.
+Few Activation function are: Threshold Function, Sigmoid Function, Rectifier Function and Hyperbolic function.
+
+ANN is mostly used for the classification problems. Also, it is used as the integral part of the Convolutional Neural Network.
