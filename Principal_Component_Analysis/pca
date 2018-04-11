@@ -1,0 +1,2 @@
+Principal Component Analysis is a part of Feature Extraction in Dimensionality Reduction.
+PCA is used to extract the percentage of contribution of each independent variables to the dependent variable. Upon knowing the contribtution of each variable we can select the number of virable we need to consider for model training.
