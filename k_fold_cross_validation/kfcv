@@ -1,0 +1,4 @@
+K fold cross validation is the method to get the overall accuracy of the model.
+Generally, when we test our model on test data, the accuracy changes with change in the test data. So we cant decide the accuracy on the same test data.
+To overcome this we use k fold cross validation, where the data is divided in the number of given folds. If we give folds as 10 so data will be divided into 10 sets and the model will be trained on 9 sets and tested on 10th set. So this will run for 10 times considering different sets everytime.
+At the end, we will get the list of 10 accuracies and the mean will be the exact accuracy.
